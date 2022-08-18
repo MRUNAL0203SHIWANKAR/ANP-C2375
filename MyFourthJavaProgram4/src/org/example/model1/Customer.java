@@ -1,32 +1,34 @@
 package org.example.model1;
 public class Customer 
 {
-	
 	private int customerId;
 	private String customerName;
+	private String productName;
+	
 	public Customer()
 	{
 	} 
-  public Customer (int customerId,String customerName)//constructor with parameter
+  public Customer (int id,String name)//constructor with parameter
 	{
-		this.customerId = customerId;
-		this.customerName=customerName;
+		customerId = id;
+		customerName=name;
 	}
 	
 	public int getCustomerId()//defining method
 	{
 		return  customerId;
 	}
-	public void setCustomerId(int customerId)//parameter with datatype
+	public void setCustomerId(int id)//parameter with datatype
 	{
-		this.customerId=customerId;
+	      customerId=customerId;
 	}
 	public String getCustomerName()
 	{
 		return customerName;
     }
-	public void setCustomerName(String customerName)
+	public void setCustomerName(String name)
 	{
-		this.customerName=customerName;
+		customerName=customerName;
 	}
+	
 }
