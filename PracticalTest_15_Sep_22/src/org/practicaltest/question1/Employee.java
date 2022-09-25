@@ -1,9 +1,11 @@
 package org.practicaltest.question1;
 
+import java.time.LocalDate;
+
 public class Employee 
-{int id;
-	String name;
-	int date;
+{public int id;
+	public String name;
+    public	LocalDate date;
 	public String toString()
 	{
 		return "Model [id=" + id + ", name=" + name + ", date=" + date + "]";
@@ -18,7 +20,8 @@ public class Employee
     public Employee()
 	{
 	}
-    public int getId() {
+    
+	public int getId() {
 		return id;
 	}
 	public void setId(int id1) {
